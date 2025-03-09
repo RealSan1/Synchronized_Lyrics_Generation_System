@@ -32,3 +32,6 @@
 ### 기술 스택
 - JavaScript, HTML, CSS를 사용하여 개발합니다.
 - 가사 데이터베이스 구축 및 관리를 위해 SQLite와 Node.js를 활용
+
+## DataBase ERD
+![ERD](https://github.com/user-attachments/assets/0ffdb6bb-08b7-4495-b086-48c794c54882)
