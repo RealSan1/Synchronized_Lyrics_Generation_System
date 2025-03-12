@@ -35,3 +35,18 @@
 
 ## DataBase ERD
 ![ERD](https://github.com/user-attachments/assets/0ffdb6bb-08b7-4495-b086-48c794c54882)
+
+## 크롬 플러그인 구조
+![struct](https://github.com/user-attachments/assets/b0dd3a8e-c299-4dd8-952c-9faeb3a4ba33)
+
+### contentscript.js
+- 사용자가 방문한 영역에서 작동하는 스크립트
+- 현재 페이지의 DOM의 정보를 전달
+  
+### background.js
+- 브라우저 영역에서 작동하는 스크립트
+- 중요한 모든 이벤트 리스너 저장
+
+### popup.js
+- 시각적인 기능을 담당
+- HTML과 직접 상호작용, background 스크립트와 함께 API 호출
