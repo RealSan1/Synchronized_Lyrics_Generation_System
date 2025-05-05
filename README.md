@@ -43,9 +43,6 @@
 ### 기술 스택
 - JavaScript, HTML, CSS를 사용하여 개발합니다.
 
-## DataBase ERD
-![ERD](https://github.com/user-attachments/assets/0ffdb6bb-08b7-4495-b086-48c794c54882)
-
 ## 크롬 플러그인 구조
 ![struct](https://github.com/user-attachments/assets/84156811-168b-4011-9535-45f77f1523d8)
 
@@ -63,7 +60,34 @@
 
 ### manifest.json
 - 확장프로그램 권한 설정
+## DataBase ERD
+![ERD](https://github.com/user-attachments/assets/3aac9f10-2491-4228-b592-2ca755eb4951)
+- lyrics_pending Table : 관리자 검증 임시 테이블
+- lyrics Table : 가사 정보 테이블
+- tracks Table : 제목 가수 앨범 정보 테이블
+- tracks_fts_v2 : FTS 테이블
+
+## API Documentation 
+- GET api/get (싱크가사 제공)
+  - 쿼리 파라미터
+    |필드|타입|설명|
+    |------|---|---|
+    |trackName|String|제목|
+    |artistName|String|가수|
+    |albumName|String|앨범|
+  - 응답
+   
+    ![응답](https://github.com/user-attachments/assets/cb0d815d-9287-4c78-b401-5a9effca1710)
+    
+- Post api/input (싱크가사 입력)
+  - 쿼리 파라미터
+    |필드|타입|설명|
+    |------|---|---|
+    |trackName|String|제목|
+    |artistName|String|가수|
+    |albumName|String|앨범|
+    |duration|Number|노래 길이|
+    |synced_lyrics|String|싱크 가사|
 
 ## User Interface
 ![Interface](https://github.com/user-attachments/assets/765b8d6c-7bc3-4a15-be5f-ee467c70578c)
-
