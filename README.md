@@ -68,7 +68,7 @@
 - tracks_fts_v2 : FTS 테이블
 
 ## API Documentation 
-- GET api/get (싱크가사 제공) [응답 지연이 발생](https://github.com/RealSan1/youtube-realtime-lyrics/issues/2)
+- GET api/get (싱크가사 제공) [응답 지연 발생](https://github.com/RealSan1/youtube-realtime-lyrics/issues/2)
   - 쿼리 파라미터
     |필드|타입|설명|
     |------|---|---|
