@@ -12,7 +12,7 @@
 - CSS
 
 ### A.I 모델
-- OpenAI whisper (자동 음성 인식(Automatic Speech Recognition, ASR) 모델)
+- OpenAI whisper (자동 음성 인식(Automatic Speech Recognition, ASR) 모델) [선정 과정](https://github.com/RealSan1/youtube-realtime-lyrics/issues/1)
 
 ### 데이터베이스
 - SQLite
@@ -63,25 +63,6 @@
 
 ### manifest.json
 - 확장프로그램 권한 설정
-
-## Ai모델 선정 과정
-### Google Could
-  ![GC](https://github.com/user-attachments/assets/9479564e-3662-4464-99dc-d92c8cb47970)
-
-음성을 문자로 변환 시 낮은 정확성과 시간대별 **가사 출력 불가**
-
-### DeepSeek-r1:32B  
-1. DeepSeek
-![Deep1](https://github.com/user-attachments/assets/afc1e907-f79a-4905-b148-5fee1e195a28)
-음악 파일을 단독으로 사용 시 DeepSeek-r1:32B **사용불가**
-<br>
-
-2. DeepSeek
-![Deep2](https://github.com/user-attachments/assets/51e10bf8-746c-4952-bd5a-edf53fad7d46)
-음악 파일 + 가사 파일 함께 사용 시 DeepSeek-r1:32B **사용 가능**
-
-![Deep3](https://github.com/user-attachments/assets/3c6ff58b-2641-435c-805d-51473114a2a0)
-77.55%의 정확도 차이로 인한 싱크 **불균형 발생**
 
 ## User Interface
 ![Interface](https://github.com/user-attachments/assets/765b8d6c-7bc3-4a15-be5f-ee467c70578c)
