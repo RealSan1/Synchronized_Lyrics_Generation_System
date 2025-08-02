@@ -4,6 +4,7 @@
 [![Issues](https://img.shields.io/github/issues/RealSan1/youtube-realtime-lyrics)](https://github.com/RealSan1/youtube-realtime-lyrics/issues)
 
 YouTube Music PC 버전에서 실시간 가사 동기화를 제공하는 Chrome 확장 프로그램입니다. PC 버전은 가사 기능이 없어 사용자 불편을 초래하며, 본 프로젝트는 OpenAI Whisper 모델과 코사인 유사도를 활용한 임베딩 매칭으로 가사를 동기화하여 음악 감상 경험을 향상시킵니다.
+- [유튜브 뮤직 확장 프로그램](https://github.com/RealSan1/YTMusic_Extension)
 
 ## 목차
 - [프로젝트 개요](#프로젝트-개요)
