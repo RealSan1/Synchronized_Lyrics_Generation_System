@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #495057;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="file"] {
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 200px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  

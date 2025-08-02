@@ -1,0 +1,99 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+form .form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.segment-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+label {
+  min-width: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.time-input {
+  width: 45px;
+  padding: 3px;
+}
+
+.lyric-input {
+  width: 400px;
+  padding: 3px;
+}
+
+.btn-icon {
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-icon img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  display: block;
+}
+
+.btn-icon:hover {
+  border-radius: 4px;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 30px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.mb-4 {
+  margin-bottom: 1px; 
+}
+
+.mb-4 label {
+  display: block;
+  margin-bottom: 5px; 
+  font-weight: bold;
+}

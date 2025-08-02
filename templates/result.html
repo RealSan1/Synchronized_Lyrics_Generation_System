@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>결과 확인</title>
+  <link href="/static/css/result.css" rel="stylesheet">
+  <script src="/static/js/result.js" defer></script>
+</head>
+<body>
+  
+  <form method="post" action="/save">
+    <div id="segments-container">
+      <div class="mb-4">
+        <label for="title" class="form-label">제목:</label>
+        <input type="text" name="title" id="title" class="form-control" required>
+      </div>
+    
+      <div class="mb-4">
+        <label for="artist" class="form-label">가수:</label>
+        <input type="text" name="artist" id="artist" class="form-control" required>
+      </div>
+    
+      <div class="mb-4">
+        <label for="album" class="form-label">앨범:</label>
+        <input type="text" name="album" id="album" class="form-control" required>
+      </div>
+
+      <div class="mb-4">
+        <label for="album" class="form-label">재생시간:</label>
+        <input type="number" name="duration" id="duration" class="form-control" required>
+      </div>
+
+      {% for seg in segments %}
+        {% set minutes = (seg.start // 60)|int %}
+        {% set seconds = (seg.start % 60)|round(2) %}
+        <div class="segment-row" id="segment-row-{{ loop.index0 }}">
+          <label>시간</label>
+          <input type="text" name="start{{ loop.index0 }}" value="{{ minutes }}:{{ '%05.2f'|format(seconds) }}" class="time-input">
+
+          <label>가사</label>
+          <input type="text" name="text{{ loop.index0 }}" value="{{ seg.corrected_text }}" class="lyric-input">
+
+          <button type="button" onclick="addNewInput({{ loop.index0 }})" class="btn-icon">
+            <img src="/static/img/add.png" alt="추가">
+          </button>          
+          <input type="hidden" name="delete{{ loop.index0 }}" value="0">
+          <button type="button" onclick="deleteInput('segment-row-{{ loop.index0 }}')" class="btn-icon">
+            <img src="/static/img/delete.png" alt="삭제">
+          </button>
+          
+        </div>
+      {% endfor %}
+    </div>
+
+    <input type="hidden" name="segment_count" value="{{ segments|length }}">
+    <button type="submit">저장</button>
+  </form>
+
+</body>
+</html>
